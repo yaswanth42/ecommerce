@@ -1,10 +1,10 @@
 import React from 'react'
-import { mobileData } from '../data/mobiles'        
-const Mobiles = () => {
-    const firstFiveImages = mobileData.slice(0, 5);
+import { computerData } from '../data/computers'
+const Computers = () => {
+    const firstFiveImages = computerData.slice(0, 5);
   return (
-    <>
-        <h2>Mobiles</h2>
+     <>
+        <h2>Computers</h2>
         <div className='proSection'>
       {
         firstFiveImages.map((item)=>{
@@ -16,8 +16,8 @@ const Mobiles = () => {
         })
       }
     </div>
-    </>
+     </>
   )
 }
 
-export default Mobiles
+export default Computers
