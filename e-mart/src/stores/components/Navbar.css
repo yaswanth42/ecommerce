@@ -1,0 +1,82 @@
+/* Styling for the enhanced Navbar */
+
+.enhanced-navbar {
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.title h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.title h2 i {
+    margin-right: 10px;
+    color: #007bff;
+}
+
+.search-bar {
+    width: 300px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-left: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-button i {
+    font-size: 16px;
+}
+
+.user-detail, .cart {
+    margin-left: 20px;
+    font-size: 16px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.user-detail i, .cart i {
+    margin-right: 5px;
+}
+
+.subMenu {
+    margin-top: 10px;
+    background-color: #007bff;
+    padding: 10px;
+}
+
+.submenu-list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.submenu-item {
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.submenu-item:hover {
+    color: #ffcc00;
+}

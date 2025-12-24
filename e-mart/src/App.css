@@ -5,15 +5,20 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+body{
+    background-color: aliceblue;
+}
 .navsection{
     border: 1px solid black;
     display: flex;
     justify-content: space-between;
     background-color: black;
-    color: white
+    color: white;
+    height: 80px;
 }
 .proSection{
     display: flex;
+    background-color:white;
 }
 .imgBox{
     width: 80%;
@@ -23,3 +28,35 @@
 .proImage{
     width: 80%;
 }
+.proTitle h2{
+    margin: 10px;
+}
+.subMenu ul li{
+    list-style: none;
+    margin: 26px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.subMenu{
+    background-color: grey;
+    color: white;
+    height: 50px;
+}
+.subMenu ul{
+    display: inline-flex;
+}
+
+.pageSection{
+    display: grid;
+    grid-template-columns: repeat(4,300px);
+    gap: 10px;
+}
+
+.pageImg{
+    width: 250px;
+    height: 250px;
+}
+.pageImg img{
+    width: 100%;
+}
+
