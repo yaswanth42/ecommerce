@@ -7,6 +7,10 @@ import Fridge from './Fridge'
 import Furniture from './Furniture'
 import Kitchen from './Kitchen'
 import Men from './Men'
+import Speaker from './Speaker'
+import Tv from './Tv'
+import Watch from './Watch'
+import Women from './Women'
 const Products = () => {
   return (
     <div>
@@ -18,6 +22,10 @@ const Products = () => {
         <Furniture />
         <Kitchen />
         <Men />
+        <Speaker />
+        <Tv />
+        <Watch />
+        <Women />
     </div>
   )
 }
