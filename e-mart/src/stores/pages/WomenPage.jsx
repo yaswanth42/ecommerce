@@ -1,12 +1,12 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-import { womenData } from '../data/women'
+import { womanData } from '../data/woman'
 const WomenPage = () => {
   return (
     <>
     <Navbar/>
         <div className='pageSection'>
-      {womenData.map((item)=>{
+      {womanData.map((item)=>{
         return(
             <div>
                 <div className="pageImg">

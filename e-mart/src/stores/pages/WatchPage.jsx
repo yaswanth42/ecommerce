@@ -13,7 +13,7 @@ const WatchPage = () => {
                     <img src={item.image} alt="watchImage" />
                 </div>
                 <div className="proModel">
-                    {item.company},{item.model}
+                    {item.brand},{item.model}
                 </div>
             </div>
         )

@@ -13,7 +13,7 @@ const Men = () => {
                     <img src={item.image} alt="menImage" />
                 </div>
                 <div className="proModel">
-                    {item.company},{item.model}
+                    {item.brand},{item.model}
                 </div>
             </div>
         )

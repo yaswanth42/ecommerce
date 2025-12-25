@@ -9,7 +9,7 @@ const BooksPage = () => {
       {booksData.map((item)=>{
         return(
             <div>
-                <div className="pageImg">
+                <div className="pageSection">
                     <img src={item.image} alt="booksImage" />
                 </div>
                 <div className="proModel">

@@ -59,4 +59,29 @@ body{
 .pageImg img{
     width: 100%;
 }
-
+.search input{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+.user{
+    margin: 20px;
+}
+.cart{
+    margin: 20px;
+}
+.ind-image{
+    width: 500px;
+    height: 500px;
+}
+.ind-image img{
+    width: 100%;
+}
+.ind-section{
+    display: flex;
+    gap: 50px;
+    margin: 50px;
+}

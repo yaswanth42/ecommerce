@@ -89,7 +89,7 @@ export const womanData = [{
     {
         "id": "9",
         "product": "Woman Wear",
-        "image": "/assets/Woman/8.jpg",
+        "image": "/assets/Woman/9.jpg",
         "type": "Swimwear",
         "brand": "Secret",
         "model": "Bikini Set",
@@ -130,4 +130,4 @@ export const womanData = [{
         "category": "Clothing",
         "description": "A casual graphic tee with trendy prints, suitable for relaxed everyday outfits."
     }
-]
+];
