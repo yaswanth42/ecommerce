@@ -1,20 +1,15 @@
-import React from 'react'
-import { mobileData } from '../stores/data/mobiles'
-import { useParams } from 'react-router-dom'
-
-const MobileSingle = () => {
-    const {id} = useParams();
-    const product = mobileData.find((item) => item.id === id);
-
-    if (!product) {
-        return <div>Product not found</div>;
-    }
-
+import React from "react";
+import { watchData } from "../stores/data/watch";
+import { useParams } from "react-router-dom";   
+const WatchesSingle = () => {
+    const {id}=useParams()
+    const product=watchData.find((item)=>item.id===id)  
+    console.log(id)
     return(
-        <div className="ind-section">
+        <div className="ind-section">   
             <div className="ind-image">
                 <img src={product.image} alt={product.model} />
-            </div>
+            </div>  
             <div className="ind-details">
                 <div className="ind-model">
                 <h3>{product.model}</h3>
@@ -27,7 +22,6 @@ const MobileSingle = () => {
             </div>
             </div>
         </div>
-    );
-};
-
-export default MobileSingle;
+    )
+}   
+export default WatchesSingle

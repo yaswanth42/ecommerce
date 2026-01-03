@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import { kitchenData } from '../data/kitchen'
+import { Link } from 'react-router-dom'
 const KitchenPage = () => {
   return (
     <>
@@ -9,9 +10,11 @@ const KitchenPage = () => {
           {kitchenData.map((item)=>{
             return(
                 <div>
-                    <div className="pageImg">
-                        <img src={item.image} alt="kitchenImage" />
-                    </div>
+                    <Link to={`/kitchen/${item.id}`}>
+                        <div className="pageImg">
+                            <img src={item.image} alt="kitchenImage" />
+                        </div>
+                    </Link>
                     <div className="proModel">
                         {item.brand},{item.model}
                     </div>

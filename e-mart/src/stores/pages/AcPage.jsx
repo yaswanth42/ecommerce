@@ -1,6 +1,8 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import { acData } from '../data/ac'
+import { Link } from 'react-router-dom'
+
 const AcPage = () => {
   return (
     <>
@@ -9,9 +11,11 @@ const AcPage = () => {
       {acData.map((item)=>{
         return(
             <div>
+              <Link to={`/acs/${item.id}`}>
                 <div className="pageImg">   
                     <img src={item.image} alt="acImage" />
                 </div>
+              </Link>
                 <div className="proModel">
                     {item.company},{item.model}
                 </div>

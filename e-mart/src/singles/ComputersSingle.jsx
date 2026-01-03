@@ -1,15 +1,10 @@
 import React from 'react'
-import { mobileData } from '../stores/data/mobiles'
+import { computerData } from '../stores/data/computers'
 import { useParams } from 'react-router-dom'
-
-const MobileSingle = () => {
-    const {id} = useParams();
-    const product = mobileData.find((item) => item.id === id);
-
-    if (!product) {
-        return <div>Product not found</div>;
-    }
-
+const ComputersSingle = () => {
+    const {id}=useParams()
+    const product=computerData.find((item)=>item.id===id)
+    console.log(id)
     return(
         <div className="ind-section">
             <div className="ind-image">
@@ -17,7 +12,7 @@ const MobileSingle = () => {
             </div>
             <div className="ind-details">
                 <div className="ind-model">
-                <h3>{product.model}</h3>
+                <h3>{product.model}</h3>    
             </div>
             <div className="ind-price">
                 <h2>Price: ${product.price}</h2>
@@ -27,7 +22,7 @@ const MobileSingle = () => {
             </div>
             </div>
         </div>
-    );
-};
+    )
+}   
 
-export default MobileSingle;
+export default ComputersSingle

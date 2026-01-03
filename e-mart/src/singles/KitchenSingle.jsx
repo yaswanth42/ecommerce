@@ -1,16 +1,11 @@
-import React from 'react'
-import { mobileData } from '../stores/data/mobiles'
-import { useParams } from 'react-router-dom'
-
-const MobileSingle = () => {
-    const {id} = useParams();
-    const product = mobileData.find((item) => item.id === id);
-
-    if (!product) {
-        return <div>Product not found</div>;
-    }
-
-    return(
+import React from "react";
+import { kitchenData } from "../stores/data/kitchen";
+import { useParams } from "react-router-dom";
+const KitchenSingle = () => {
+  const { id } = useParams();
+  const product = kitchenData.find((item) => item.id === id);
+    console.log(id);
+    return (
         <div className="ind-section">
             <div className="ind-image">
                 <img src={product.image} alt={product.model} />
@@ -28,6 +23,5 @@ const MobileSingle = () => {
             </div>
         </div>
     );
-};
-
-export default MobileSingle;
+}
+export default KitchenSingle;

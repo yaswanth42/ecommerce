@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import { speakerData } from '../data/speaker'
+import { Link } from 'react-router-dom'
 const SpeakerPage = () => {
   return (
     <>
@@ -9,9 +10,11 @@ const SpeakerPage = () => {
           {speakerData.map((item)=>{
             return(
                 <div>
-                    <div className="pageImg">
-                        <img src={item.image} alt="speakerImage" />
-                    </div>
+                    <Link to={`/speakers/${item.id}`}>
+                        <div className="pageImg">
+                            <img src={item.image} alt="speakerImage" />
+                        </div>
+                    </Link>
                     <div className="proModel">
                         {item.brand},{item.model}
                     </div>

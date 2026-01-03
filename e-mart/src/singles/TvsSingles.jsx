@@ -1,15 +1,14 @@
-import React from 'react'
-import { mobileData } from '../stores/data/mobiles'
-import { useParams } from 'react-router-dom'
+import React from "react";
+import { tvData } from "../stores/data/tv";
+import { useParams } from "react-router-dom";
 
-const MobileSingle = () => {
-    const {id} = useParams();
-    const product = mobileData.find((item) => item.id === id);
+const TvsSingle = () => {
+    const { id } = useParams();
+    const product = tvData.find((item) => item.id === id);
 
     if (!product) {
         return <div>Product not found</div>;
     }
-
     return(
         <div className="ind-section">
             <div className="ind-image">
@@ -28,6 +27,5 @@ const MobileSingle = () => {
             </div>
         </div>
     );
-};
-
-export default MobileSingle;
+}
+export default TvsSingle;

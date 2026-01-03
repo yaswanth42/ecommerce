@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import { tvData } from '../data/tv'
+import { Link } from 'react-router-dom'
 const TvPage = () => {
   return (
     <>
@@ -9,9 +10,11 @@ const TvPage = () => {
           {tvData.map((item)=>{
             return(
                 <div>
+                    <Link to={`/tvs/${item.id}`}>
                     <div className="pageImg">
                         <img src={item.image} alt="tvImage" />
                     </div>
+                    </Link>
                     <div className="proModel">
                         {item.brand},{item.model}
                     </div>
